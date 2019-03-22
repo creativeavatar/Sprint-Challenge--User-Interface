@@ -71,6 +71,46 @@ p {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom:30px;
+}
+.headerimg {
+    
+}
+.masthead {
+    margin-bottom:30px;
+}
+header nav {
+    width:800px;
+    vertical-align: top;
+    margin-top: 25px;
+    margin-left: 20px;
+    display:flex;
+    justify-content: space-around;
+}
+
+        header nav a {
+            margin-right: 30px;
+            font-size: 15px;
+            color: black;
+            text-decoration: none;
+            font-style:bold;
+        }
+
+            header nav a:hover {
+                text-decoration: underline;
+            }
+
+            header nav a:first-child {
+                margin-left: 0;
+            }
+
+            header nav a:last-child {
+                margin-right: 0;
+            }
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +144,7 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /*background: black;*/
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -143,4 +183,45 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*Quick Colors Johnny Mo*/
+.teal {
+    background-color: teal;
+}
+
+.gold {
+    background-color: gold;
+}
+
+.cadetblue {
+    background-color: cadetblue
+}
+
+.coral {
+    background-color: coral;
+}
+
+.crimson {
+    background-color: crimson;
+}
+
+.forestgreen {
+    background-color: forestgreen;
+}
+
+.darkorchid {
+    background-color: darkorchid;
+}
+
+.hotpink {
+    background-color: hotpink;
+}
+
+.indigo {
+    background-color: indigo;
+}
+
+.dodgerblue {
+    background-color: dodgerblue;
 }
