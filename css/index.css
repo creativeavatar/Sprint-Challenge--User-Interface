@@ -3,48 +3,41 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -75,42 +68,45 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
+
 .headerimg {
-    
 }
+
 .masthead {
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
+
 header nav {
-    width:800px;
+    width: 800px;
     vertical-align: top;
     margin-top: 25px;
     margin-left: 20px;
-    display:flex;
+    display: flex;
     justify-content: space-around;
 }
 
-        header nav a {
-            margin-right: 30px;
-            font-size: 15px;
-            color: black;
-            text-decoration: none;
-            font-style:bold;
+    header nav a {
+        margin-right: 30px;
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+        font-style: bold;
+    }
+
+        header nav a:hover {
+            text-decoration: underline;
         }
 
-            header nav a:hover {
-                text-decoration: underline;
-            }
+        header nav a:first-child {
+            margin-left: 0;
+        }
 
-            header nav a:first-child {
-                margin-left: 0;
-            }
+        header nav a:last-child {
+            margin-right: 0;
+        }
 
-            header nav a:last-child {
-                margin-right: 0;
-            }
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -119,38 +115,66 @@ header nav {
     border-bottom: 1px dashed black;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    .top-content .text-container {
+        width: 48%;
+        padding: 0 1%;
+        padding-bottom: 20px;
+    }
+
+.top-content-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
 }
+
+    .top-content-about .text-container-about {
+        width: 98%;
+        padding: 0 1%;
+        padding-bottom: 20px;
+    }
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+    .about-content .about-text-container {
+        width: 45%;
+        max-width: 370px;
+        padding: 0 0%;
+        padding-bottom: 20px;
+    }
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
+    .middle-content h2 {
+        padding: 0 2%;
+        margin-bottom: 0;
+    }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    /*background: black;*/
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .middle-content .boxes .box {
+            width: 12.5%;
+            height: 100px;
+            /*background: black;*/
+            margin: 20px 2.5%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
 .bottom-content {
     display: flex;
@@ -158,12 +182,23 @@ header nav {
     justify-content: space-around;
 }
 
-.bottom-content .text-container {
-    padding-right: 4%;
+    .bottom-content .text-container {
+        padding-right: 4%;
+    }
+
+        .bottom-content .text-container:last-child {
+            padding-right: 0;
+        }
+
+.breakdown-images {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+.the-great-divide {
+    border-bottom: 1px dashed black;
+    width: 48%;
+    margin-bottom: 46px;
 }
 
 footer {
@@ -171,21 +206,37 @@ footer {
     background: black;
 }
 
-footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
-}
+    footer nav {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 2%;
+        font-size: 14px;
+    }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
+        footer nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+/*Button... Button... Who's got the button...*/
+
+.learnmore-button {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: white;
+    font-style: bold;
 }
 
 /*Quick Colors Johnny Mo*/
+
 .teal {
     background-color: teal;
 }
